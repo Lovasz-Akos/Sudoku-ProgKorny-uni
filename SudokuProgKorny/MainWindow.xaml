@@ -1,0 +1,31 @@
+﻿<Window x:Class="SudokuProgKorny.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SudokuProgKorny"
+        mc:Ignorable="d"
+        Title="Lovász Ákos" Height="615.7" Width="643" WindowStyle="ThreeDBorderWindow" ResizeMode="CanMinimize">
+
+
+    <DockPanel x:Name="mainGrid">
+        <TextBlock Foreground="White" Background="Black" DockPanel.Dock ="Top" FontSize ="36">Sudoku</TextBlock>
+        <StackPanel DockPanel.Dock ="Left" Width="68" Background="Black">
+
+            <StackPanel>
+
+                <Button Click="Button_Click_1" Height="70" Content="Új játék" Background="White" FontWeight="Bold"/>
+                <Button Click="Button_Click" Content="Kilépés" Height="70" Background="White" FontWeight="Bold"/>
+                <Button Content="About" Height="20" Click="Button_Click_2" Background="White" FontWeight="Bold"/>
+
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel Background ="Black">
+            <Grid x:Name="gameGrid" Height="500" Width="526" Margin="0,0,0,0"/>
+
+        </StackPanel>
+    </DockPanel>
+
+</Window>
